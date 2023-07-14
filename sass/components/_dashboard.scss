@@ -1,0 +1,65 @@
+.dashboard {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7rem;
+
+    @media (max-width: $tablets) {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 4rem;
+    }
+  }
+
+  &__heading {
+    flex: 1;
+
+    @media (max-width: $tablets) {
+      // font-size: 4.2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    flex: 1;
+  }
+
+  &__box {
+    margin-top: 9rem;
+    width: 100%;
+    height: 56rem;
+    background-image: linear-gradient(
+      to right bottom,
+      $color-primary,
+      $color-secondary
+    );
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media (max-width: $tablets) {
+      margin-top: 4rem;
+    }
+
+    @media (max-width: $phone) {
+      height: auto;
+    }
+  }
+
+  &__img {
+    width: 80%;
+    height: 95%;
+
+    transform: translateY(8rem);
+    box-shadow: $box-shadow-dark-2;
+
+    @media (max-width: $tablets) {
+      transform: translateY(0);
+      width: 90%;
+    }
+  }
+}

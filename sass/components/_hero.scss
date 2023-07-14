@@ -1,0 +1,66 @@
+.section-hero {
+  display: flex;
+  gap: 10rem;
+}
+
+.hero {
+  min-width: 50rem;
+  height: 100%;
+  padding-top: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+
+  @media (max-width: $phone) {
+    min-width: 100%;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+
+  &__features {
+    align-self: start;
+
+    &--text {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    &--logos {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    &--logo {
+      width: 100%;
+    }
+
+    // @media (max-width: $tablets) {
+    //   align-self: start;
+    // }
+  }
+}
+
+.hero-img-box {
+  width: 100%;
+  img {
+    box-shadow: $box-shadow-dark-3;
+    border-radius: 2rem;
+
+    @media (max-width: $tablets) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__icon {
+    font-size: 0.8rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,66 @@
+// FONT
+$font-primary: "Inter", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+// COLOR
+$color-primary: #6366f1;
+$color-secondary: #d846ef;
+
+$color-white: #fff;
+
+$color-primary-light: #c1c2f9;
+$color-secondary-light: #e890f5;
+
+$color-footer-white: #b9babd;
+$color-footer-dark: #667077;
+
+$color-text-dark: #0b0f1a;
+$color-text-light: #67686b;
+
+$color-btn: #e9e6f6;
+
+$color-background: #faf9ff;
+
+$box-shadow-dark-1: 0 1rem 2rem rgba($color-text-dark, 0.1);
+$box-shadow-dark-2: 0 2rem 4rem rgba($color-text-dark, 0.25);
+$box-shadow-dark-3: 0 0rem 1rem rgba($color-text-dark, 0.35);
+
+// RESPONSIVE
+$small-des: 75em; // 1200px
+$tablets: 59em; //  900px
+$small-port: 44em; // 800px
+$phone: 34em; // 600px
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: $small-des) {
+    font-size: 56.25%;
+  }
+
+  @media (max-width: $small-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-secondary;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: $color-background;
+  color: $color-text-light;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

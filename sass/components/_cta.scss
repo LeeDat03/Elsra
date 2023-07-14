@@ -1,0 +1,16 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  .cta__text {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta__heading {
+    text-align: center;
+  }
+}

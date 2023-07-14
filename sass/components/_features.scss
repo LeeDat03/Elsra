@@ -1,0 +1,51 @@
+.features {
+  padding: 12rem 15rem;
+  color: $color-white;
+  border-radius: 3rem;
+
+  @media (max-width: $phone) {
+    padding: 7rem;
+  }
+
+  &__heading {
+    color: inherit;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+    line-height: 1.4;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 8rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__label {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 7.4rem;
+    font-weight: 700;
+
+    @media (max-width: $phone) {
+      font-size: 4.8rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.6rem;
+
+    @media (max-width: $tablets) {
+      font-size: 1.4rem;
+    }
+  }
+}

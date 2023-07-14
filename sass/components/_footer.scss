@@ -1,0 +1,88 @@
+.footer {
+  &__container {
+    @include container-width;
+    display: flex;
+    gap: 14rem;
+
+    @media (max-width: $small-port) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    // align-items: center;
+  }
+
+  &__about {
+    flex: 2;
+  }
+
+  &__contact,
+  &__social {
+    flex: 1;
+  }
+
+  &__main-logo {
+    img {
+      width: 13.2rem;
+    }
+  }
+
+  &__text {
+    font-size: inherit;
+  }
+
+  &__head {
+    font-size: 1.8rem;
+    color: $color-white;
+    font-weight: 600;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: inherit;
+    color: $color-footer-white;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-white;
+    text-decoration: underline;
+  }
+
+  &__contact {
+    &--box {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &--text {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__social {
+    &--box {
+      display: flex;
+      gap: 2rem;
+    }
+
+    &--icon {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+.copyright {
+  font-size: inherit;
+  align-items: start;
+}

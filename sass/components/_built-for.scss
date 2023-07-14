@@ -1,0 +1,81 @@
+.built-for {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+
+  &__control {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    display: none;
+
+    &--active {
+      display: grid;
+      animation: fadeIn 1s;
+
+      @media (max-width: $tablets) {
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    & > ul {
+      @media (max-width: $tablets) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: $phone) {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  &__cta:link,
+  &__cta:visited {
+    font-size: 1.6rem;
+    color: $color-primary;
+    text-decoration: underline;
+    display: inline-block;
+    align-self: flex-start;
+    transition: all 0.2s;
+  }
+
+  &__cta:hover,
+  &__cta:active {
+    color: $color-text-light;
+    text-decoration: none;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: end;
+    border-radius: 2rem;
+
+    @media (max-width: $tablets) {
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 90%;
+      box-shadow: $box-shadow-dark-2;
+
+      @media (max-width: $phone) {
+        width: 100%;
+      }
+    }
+  }
+}

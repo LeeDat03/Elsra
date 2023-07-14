@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <script
+      src="https://kit.fontawesome.com/9cc384cd4e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpg" href="img/favicon.ico" />
+    <title>Elsra</title>
+
+    <!-- SCRIPTS -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <a href="#">
+          <img src="img/logo.svg" alt="Logo of Elsra" class="header__logo" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Features</a></li>
+            <li><a href="#" class="nav__link">Pricing</a></li>
+            <li><a href="#" class="nav__link">Article</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+            <button class="btn nav__link btn__link btn__white">Log in</button>
+            <button class="btn nav__link btn__link btn__fill">Sign up</button>
+          </ul>
+        </nav>
+
+        <button class="nav__mobile">
+          <i
+            class="fa-solid fa-bars nav__icon nav__icon--menu"
+            name="menu-outline"
+          ></i>
+          <i
+            class="fa-solid fa-xmark nav__icon nav__icon--close"
+            name="close-outline"
+          ></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <div class="section-hero-container">
+        <div class="section-hero">
+          <div class="hero">
+            <div class="hero__description">
+              <h1 class="heading-primary">Cool SaaS app landing page</h1>
+              <p class="hero__text">
+                This is not a real website it's just a template created to
+                simplify work for web designers and developers
+              </p>
+              <button class="btn btn__medium">Get started for free</button>
+            </div>
+
+            <div class="hero__features">
+              <p class="hero__features--text">Trusted by the best</p>
+              <div class="hero__features--logos">
+                <div class="hero__features-box">
+                  <img
+                    src="img/company-logo-1.png"
+                    alt="Company 1"
+                    class="hero__features--logo"
+                  />
+                </div>
+                <div class="hero__features-box">
+                  <img
+                    src="img/company-logo-2.png"
+                    alt="Company 2"
+                    class="hero__features--logo"
+                  />
+                </div>
+                <div class="hero__features-box">
+                  <img
+                    src="img/company-logo-3.png"
+                    alt="Company 3"
+                    class="hero__features--logo"
+                  />
+                </div>
+                <div class="hero__features-box">
+                  <img
+                    src="img/company-logo-4.png"
+                    alt="Company 4"
+                    class="hero__features--logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img
+              src="img/header-dashboard.png"
+              alt="Decription Dashboards"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- DESCRIPT SECTION -->
+      <div class="section-descript">
+        <div class="descript__container">
+          <div class="descript__box">
+            <h4 class="heading-four">Simple usage and quick access to main</h4>
+            <p class="paragraph-text">
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit. Nullam
+              nam sem ridiculus egetco mmodo pharetra maecenas nisi quis
+            </p>
+          </div>
+
+          <div class="descript__box">
+            <h4 class="heading-four">
+              Made to work from anywhere in the world
+            </h4>
+            <p class="paragraph-text">
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit. Nullam
+              nam sem ridiculus egetco mmodo pharetra maecenas nisi quis
+            </p>
+          </div>
+
+          <div class="descript__box">
+            <h4 class="heading-four">
+              No special skills are needed to learn faster
+            </h4>
+            <p class="paragraph-text">
+              Lorem ipsum dolor sit amet, consectetur adipi scing elit. Nullam
+              nam sem ridiculus egetco mmodo pharetra maecenas nisi quis
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DASHBOARD SECTION -->
+      <div class="section-dashboard">
+        <div class="dashboard__content">
+          <h2 class="heading-secondary dashboard__heading">
+            Using the right SaaS app can help you project grow to new heights.
+            Check it out for yourself
+          </h2>
+          <p class="dashboard__text paragraph-text">
+            Nulla feugiat ultrices nostra aptent dui sociosqu mollis
+            pellentesque vulputate class rhoncus praesent dui. Nostra sapien
+            ultricies parturient a dapibus mattis porta molestie mus pharetra
+            magna suscipit et.Curabitur dictumst egestas tellus elit suspendisse
+            non perse sagittis lectus
+          </p>
+        </div>
+
+        <div class="dashboard__box">
+          <img
+            src="/img/description-dashboard.png"
+            alt=""
+            class="dashboard__img"
+          />
+        </div>
+      </div>
+
+      <!-- PRODUCT SECTION -->
+      <div class="section-product">
+        <div class="product">
+          <!-- PRODUCT 1 -->
+          <div class="product__img-box">
+            <img src="img/details-1.png" alt="Detail 1" class="product__img" />
+          </div>
+
+          <div class="product__content">
+            <div class="product__title">
+              <p class="product__high-step">High step</p>
+              <h3 class="heading-secondary product__heading">
+                Improve productivity and accuracy with app
+              </h3>
+            </div>
+            <p class="paragraph-text">
+              Suscipit imperdiet conubia scelerisque eget fringilla purus lectus
+              volutp at adipiscing aliquam bibendum eros quis. Phasellus metus a
+              mollis nascetur metus purus imperdiet eleifend eu cubilia inceptos
+              orci.
+            </p>
+          </div>
+
+          <!-- PRODCUT 2 -->
+          <div class="product__img-box product__img-box-2">
+            <img src="img/details-2.png" alt="Detail 2" class="product__img" />
+          </div>
+
+          <div class="product__content product__content-2">
+            <div class="product__title">
+              <p class="product__high-step">High step</p>
+              <h3 class="heading-secondary product__heading">
+                Get things done faster and better with this app
+              </h3>
+            </div>
+            <ul class="list">
+              <li class="list__item">
+                <span>
+                  <i class="fa-solid fa-circle list__icon"></i>
+                </span>
+                <p>
+                  Imperdiet conubia scelerisque eget fringilla purus lectus
+                  volutp atipi
+                </p>
+              </li>
+              <li class="list__item">
+                <span>
+                  <i class="fa-solid fa-circle list__icon"></i>
+                </span>
+                <p>
+                  Volutp at adipiscing aliquam bibendum eros quis ellus metus a
+                  mollis
+                </p>
+              </li>
+              <li class="list__item">
+                <span>
+                  <i class="fa-solid fa-circle list__icon"></i>
+                </span>
+                <p>Phasellus metus a mollis nascetur metus purus imperdiet</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PRODUCT 3 -->
+          <div class="product__img-box">
+            <img src="img/details-3.png" alt="Detail 3" class="product__img" />
+          </div>
+
+          <div class="product__content">
+            <div class="product__title">
+              <p class="product__high-step">High step</p>
+              <h3 class="heading-secondary product__heading">
+                The perfect moment to start is today and now
+              </h3>
+            </div>
+            <p class="paragraph-text">
+              Scelerisque eget fringilla purus lectus volutp at adipiscing
+              aliquam bibendum eros quis phasellus metus a mollis nascetur
+              aliqua
+            </p>
+            <div class="btn btn__fill btn__product">Get started</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BUILT-FOR SECTION -->
+      <div class="section-built-for">
+        <div class="built-for">
+          <h2 class="heading-secondary">
+            Built for all kind of teams pros and beginners
+          </h2>
+
+          <div class="built-for__control">
+            <button
+              class="btn btn__built btn__built--1 btn__built--active"
+              data-tab="1"
+            >
+              Great speed
+            </button>
+            <button class="btn btn__built btn__built--2" data-tab="2">
+              Epic power
+            </button>
+            <button class="btn btn__built btn__built--3" data-tab="3">
+              Accurate data
+            </button>
+            <button class="btn btn__built btn__built--4" data-tab="4">
+              Reliable results
+            </button>
+          </div>
+
+          <div
+            class="built-for__description built-for__description--1 built-for__description--active"
+          >
+            <div class="built-for__text-box">
+              <p class="paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                nam sem ridiculus eget commodo pharetra maecenas nisi quisque
+                lorem aliquam auctor inceptos. Nulla feugiat ultrices nostra
+                aptent dui sociosqu mollis pellentesque vulputate
+              </p>
+
+              <ul class="list">
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Consectetur adipiscing elit nullam nam sem</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Nullam nam sem ridiculus eget commod nivo</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Maecenas nisi quisque lorem aliquam auctor</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Class rhoncus praesent dui nostra sapien desor</p>
+                </li>
+              </ul>
+
+              <a href="#" class="built-for__cta">Get started</a>
+            </div>
+            <div class="built-for__img-box">
+              <img src="img/pills-one.png" alt="Option 1 img" />
+            </div>
+          </div>
+
+          <div class="built-for__description built-for__description--2">
+            <div class="built-for__text-box">
+              <p class="paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                nam sem ridiculus eget commodo pharetra maecenas nisi quisque
+                lorem aliquam auctor inceptos. Nulla feugiat ultrices nostra
+                aptent dui sociosqu mollis pellentesque vulputate
+              </p>
+
+              <ul class="list">
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Consectetur adipiscing elit nullam nam sem</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Nullam nam sem ridiculus eget commod nivo</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Maecenas nisi quisque lorem aliquam auctor</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Class rhoncus praesent dui nostra sapien desor</p>
+                </li>
+              </ul>
+
+              <a href="#" class="built-for__cta">Get started</a>
+            </div>
+            <div class="built-for__img-box">
+              <img src="img/pills-two.png" alt="Option 2 img" />
+            </div>
+          </div>
+
+          <div class="built-for__description built-for__description--3">
+            <div class="built-for__text-box">
+              <p class="paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                nam sem ridiculus eget commodo pharetra maecenas nisi quisque
+                lorem aliquam auctor inceptos. Nulla feugiat ultrices nostra
+                aptent dui sociosqu mollis pellentesque vulputate
+              </p>
+
+              <ul class="list">
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Consectetur adipiscing elit nullam nam sem</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Nullam nam sem ridiculus eget commod nivo</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Maecenas nisi quisque lorem aliquam auctor</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Class rhoncus praesent dui nostra sapien desor</p>
+                </li>
+              </ul>
+
+              <a href="#" class="built-for__cta">Get started</a>
+            </div>
+            <div class="built-for__img-box">
+              <img src="img/pills-three.png" alt="Option 3 img" />
+            </div>
+          </div>
+
+          <div class="built-for__description built-for__description--4">
+            <div class="built-for__text-box">
+              <p class="paragraph-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                nam sem ridiculus eget commodo pharetra maecenas nisi quisque
+                lorem aliquam auctor inceptos. Nulla feugiat ultrices nostra
+                aptent dui sociosqu mollis pellentesque vulputate
+              </p>
+
+              <ul class="list">
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Consectetur adipiscing elit nullam nam sem</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Nullam nam sem ridiculus eget commod nivo</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Maecenas nisi quisque lorem aliquam auctor</p>
+                </li>
+                <li class="list__item">
+                  <span>
+                    <i class="fa-solid fa-circle list__icon"></i>
+                  </span>
+                  <p>Class rhoncus praesent dui nostra sapien desor</p>
+                </li>
+              </ul>
+
+              <a href="#" class="built-for__cta">Get started</a>
+            </div>
+            <div class="built-for__img-box">
+              <img src="img/pills-two.png" alt="Option 4 img" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURES SECTION -->
+      <div class="section-features">
+        <div class="features">
+          <h2 class="heading-secondary features__heading">
+            Why companies large and small trust this app
+          </h2>
+
+          <div class="features__container">
+            <div class="features__label">
+              <span class="features__title">ISO</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+            <div class="features__label">
+              <span class="features__title">99%</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+            <div class="features__label">
+              <span class="features__title">#1</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+            <div class="features__label">
+              <span class="features__title">500+</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+            <div class="features__label">
+              <span class="features__title">24M+</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+            <div class="features__label">
+              <span class="features__title">99+</span>
+              <p class="paragraph-text features__text">
+                Ridiculus eget commodo pharetra maec enas nisi quisque lorem
+                ipsum do
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTIMONIALS SECTION -->
+      <div class="section-testimonial">
+        <h2 class="heading-secondary testimonial__head">
+          Loved by designers and developers
+        </h2>
+        <div class="testimonial">
+          <div class="testimonial__card">
+            <p class="paragraph-text">
+              “Nostra sapien ultricies parturient a dapibus mattis porta
+              molestie mus pharetra magna suscipit et. Curabitur dictumst
+              egestas tellus elit suspendi sse non per sagittis lectus elemen
+              sagittis magna tincidunt”
+            </p>
+
+            <div class="testimonial__box">
+              <div class="testimonial__img">
+                <img src="img/testimonial-1.jpg" alt="Person 1" />
+              </div>
+              <div class="testimonial__person">
+                <p class="testimonial__name">First Name</p>
+                <p class="testimonial__job">Job Title and Company</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <p class="paragraph-text">
+              “Nostra sapien ultricies parturient a dapibus mattis porta
+              molestie mus pharetra magna suscipit et. Curabitur dictumst
+              egestas tellus elit suspendi sse non per sagittis lectus elemen
+              sagittis magna tincidunt”
+            </p>
+
+            <div class="testimonial__box">
+              <div class="testimonial__img">
+                <img src="img/testimonial-2.jpg" alt="Person 2" />
+              </div>
+              <div class="testimonial__person">
+                <p class="testimonial__name">First Name</p>
+                <p class="testimonial__job">Job Title and Company</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <p class="paragraph-text">
+              “Nostra sapien ultricies parturient a dapibus mattis porta
+              molestie mus pharetra magna suscipit et. Curabitur dictumst
+              egestas tellus elit suspendi sse non per sagittis lectus elemen
+              sagittis magna tincidunt”
+            </p>
+
+            <div class="testimonial__box">
+              <div class="testimonial__img">
+                <img src="img/testimonial-3.jpg" alt="Person 3" />
+              </div>
+              <div class="testimonial__person">
+                <p class="testimonial__name">First Name</p>
+                <p class="testimonial__job">Job Title and Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CALL-TO-ACTION SECTION -->
+      <div class="section-cta">
+        <div class="cta">
+          <h2 class="heading-secondary cta__heading">
+            The best time to start using it is today
+          </h2>
+          <p class="cta__text">
+            Dapibus mattis porta molestie mus pharetra magna suscipit et
+            curabitur dictumst egestas dictumst egestas
+          </p>
+          <button class="btn btn__fill btn__medium">
+            Get started for free
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__wrap footer__about">
+          <a href="#" class="footer__main-logo">
+            <img src="img/logo-negative.svg" alt="Logo of Elsra" />
+          </a>
+          <p class="footer__text">
+            Suscipit imperdiet conubia scelerisque eget fringilla purus lectus
+            volutpat adipiscing aliquam bibendum eros quis. Phasellus metus a
+            mollis nascetur metus purus imperdiet eleifend eu cubilia inceptos
+            orci orci sagittis lectus dictumst egestas.
+          </p>
+          <div class="copyright">
+            <p class="copyright__text">Copyright © 2023 by LeeDat</p>
+          </div>
+        </div>
+
+        <div class="footer__wrap footer__contact">
+          <div class="footer__head">Contact</div>
+          <div class="footer__contact--box">
+            <div class="footer__contact--text">
+              <i class="fa-solid fa-phone footer__contact--icon"></i>
+              <a href="tel:123456789" class="footer__link">+84 123 456 789</a>
+            </div>
+            <div class="footer__contact--text">
+              <i class="fa-solid fa-envelope footer__contact--icon"></i>
+              <a href="mailto:elsra@gmail.com" class="footer__link"
+                >elsra@gmail.com</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__wrap footer__social">
+          <div class="footer__head">Social</div>
+          <div class="footer__social--box">
+            <a href="#" class="footer__link">
+              <i class="fa-brands fa-twitter footer__social--icon"></i>
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-brands fa-facebook-f footer__social--icon"></i>
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-brands fa-instagram footer__social--icon"></i>
+            </a>
+            <a href="#" class="footer__link">
+              <i class="fa-brands fa-linkedin-in footer__social--icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

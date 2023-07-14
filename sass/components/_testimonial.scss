@@ -1,0 +1,65 @@
+.section-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.testimonial {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  column-gap: 4rem;
+
+  @media (max-width: $small-port) {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  &__head {
+    text-align: center;
+  }
+
+  &__card {
+    background-color: $color-white;
+    padding: 4rem;
+    border-radius: 3rem;
+    box-shadow: $box-shadow-dark-1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05) translateY(-2rem);
+
+      // .testimonial__img {
+      //   animation-name: rotate;
+      //   animation-duration: 1s;
+      //   animation-timing-function: linear;
+      //   animation-iteration-count: infinite;
+      // }
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__img {
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__person {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,90 @@
+.btn {
+  border: none;
+  background-color: $color-background;
+  color: $color-text-light;
+  padding: 0.6rem 1.8rem;
+  font-family: $font-secondary;
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  box-shadow: $box-shadow-dark-1;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media (max-width: $phone) {
+    font-size: 1.4rem;
+  }
+
+  &__link {
+    @media (max-width: $tablets) {
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &__white {
+    background-color: transparent;
+    color: $color-text-dark;
+    border: 1px solid $color-text-dark;
+
+    &:hover {
+      background-color: $color-text-dark;
+      color: $color-white;
+    }
+  }
+
+  &__fill,
+  &__medium {
+    color: $color-white;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      background-color: transparent;
+      color: $color-primary;
+    }
+  }
+
+  &__medium {
+    padding: 1.4rem 2.6rem;
+  }
+
+  &__product {
+    align-self: start;
+  }
+
+  &__built {
+    font-size: 1.8rem;
+    background-color: transparent;
+    padding: 1.2rem 2.4rem;
+    font-weight: 400;
+    box-shadow: none;
+    border: 2px solid $color-btn;
+
+    @media (max-width: $phone) {
+      font-size: 1.4rem;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      background-color: $color-btn;
+    }
+
+    &--active {
+      background-color: $color-btn;
+      transform: translateY(-3px);
+    }
+  }
+}

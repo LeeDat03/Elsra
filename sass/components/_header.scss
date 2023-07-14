@@ -1,0 +1,121 @@
+.header {
+  &__container {
+    @include container-width;
+
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 15rem;
+    display: flex;
+  }
+}
+
+.nav {
+  margin-right: 2.4rem;
+
+  @media (max-width: $tablets) {
+    background-color: rgba($color-white, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+
+    // HIDE NAV
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(100%);
+
+    transition: all 0.5s;
+  }
+
+  &__open & {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  &__mobile {
+    border: none;
+    background-color: transparent;
+    z-index: 1000;
+
+    display: none;
+
+    @media (max-width: $tablets) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 3.6rem;
+
+    &[name="close-outline"] {
+      display: none;
+    }
+  }
+
+  &__open &__icon[name="close-outline"] {
+    display: block;
+  }
+  &__open &__icon[name="menu-outline"] {
+    display: none;
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    @media (max-width: $tablets) {
+      // display: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text-light;
+    font-size: 1.6rem;
+    padding: 0.4rem;
+    transition: all 0.2s;
+
+    @media (max-width: $tablets) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &__link:hover {
+    transform: translateY(-3px) scale(1.1);
+  }
+
+  &__link:active {
+    transform: translateY(0px);
+  }
+}
